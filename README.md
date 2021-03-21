@@ -1,2 +1,2 @@
-# Cadastro
- Primeiro repoditório github
+# Cadastramento
+ Primeiro repositório github
