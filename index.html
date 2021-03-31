@@ -8,27 +8,89 @@
         <link rel="stylesheet" href="./cadastro.css">
     </head>
     <body>
-        <header>
+          <header>
             <div id="cabeçalho">
-                <img src="./imagens/micael.png" alt="Micael" height="150" width="150">
-                <h1>MICAEL SANTOS OLIVEIRA</h1>
+                <img src="./imagens/micael.png" alt="Micael" height="100" width="100">
+                <p>Cadastro para um Dev</p>
             </div>
         </header>
         <main>
-            <section id="DadosPessoais">
-                <h2>Dados Pessoais</h2>
-                <div id="Card1">
-                    <ul>
-                        <li>Endereço: Rua Rosangela Mariana Lima 371 casa 161, Vila Aurora - Itapevi-SP</li>
-                        <li>Tel: (11)97174-1190</li>
-                        <li>Email: micaelmaryna140815@gmail.com</li>
-                    </ul>
-                </div>
-            </section>
-        </main>
-        <footer>
+           <form method="GET" action="/CADASTRO">
+               <fieldset class="grupo">
+                   <div>
+                       <label for="nome">Nome</label>
+                       <input type="text" name="nome" id="nome" required>
+                   </div>
+                   <div class="campo">
+                       <label for="sobrenome">Sobrenome</label>
+                        <input type="text" name="Sobrenome" id="Sobrenome" required>
+                   </div>                   
+               </fieldset>
 
-        </footer>
-        
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="email">Email</label>                        
+                        <input type="email" name="email" id="email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="cpf">CPF</label>
+                        <input type="text" name="cpf" id="cpf" required>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="campo">
+                        <label>Em qual aplicação você sabe desenvolver?</label>
+                        <input type="radio" name="genero" value="M" checked>Masc
+                        <input type="radio" name="genero" value="F">Fem                     
+                    </div>
+                </fieldset>
+
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label>Em qual aplicação você sabe desenvolver?</label>
+                        <input type="radio" name="devweb" value="frontend" checked>Front-end
+                        </label>
+                        <label>
+                            <input type="radio" name="devweb" value="backend">Back-end
+                        </label>
+                        <label>
+                            <input type="radio" name="devweb" value="fullstack">Fullstack
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label>O quanto você conhece dessa linguagem?</label>
+                        <select id="conhecimento" required>
+                            <option selected disabled value="">--selecione--</option>
+                            <option>Nada</option>
+                            <option>Pouco</option>
+                            <option>Médio</option>
+                            <option>Muito</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label><strong>Selecione as tecnologias que você quer aprender:</strong></label><br><br>
+                        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                        <label for="tecnologia1"> HTML</label>
+                        <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                        <label for="tecnologia2"> CSS</label>
+                        <input type="checkbox" id="tecnologia3" name="tecnologia3" value="JavaScript">
+                        <label for="tecnologia3"> JavaScript</label>
+                        <input type="checkbox" id="tecnologia4" name="tecnologia4" value="SQL">
+                        <label for="tecnologia4">SQL</label>
+                    </div>
+                </fieldset>
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div>
+           </form>
+        </main>
     </body>
 </html>
